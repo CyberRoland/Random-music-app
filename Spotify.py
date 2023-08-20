@@ -74,7 +74,7 @@ Entrysong = StringVar(value='Pick a Song')
 
 # BackGround image
 
-top_original = Image.open('Python\Projects\Extra stuff\Top.png')
+top_original = Image.open('Img/Top.png')
 Top_img = ImageTk.PhotoImage(top_original)
 
 
@@ -101,7 +101,7 @@ Volume_Slider = CTkSlider(Spotify,
 Volume_Slider.set(0)
 
 # Song Files
-with open("Python\Projects\Extra stuff\songs.txt", "r") as file:
+with open("songs\songs.txt", "r") as file:
     songs = file.read().splitlines()
 
 songs = [song.replace(".mp3", "") for song in songs]
